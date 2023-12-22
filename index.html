@@ -2,12 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <div>test</div>
+
+<div class="left-container">
+    <div class="title-container">
+        <img src="odin-lined.png" alt="logo" class="logo">
+        <div class="title">SIGNING UP</div>
+    </div>
+    <div class="credits">Photo by<a class="credits" href="https://unsplash.com/@melkita_ulamun?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mara K</a>on<a class="credits" href="https://unsplash.com/photos/green-grass-field-with-green-plants-C_SCxSPIKwQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+</div>
+
+<div class="right-container">
+    <p class="description">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+    <p class="description">Sign up <em>now</em> to get stated.</p>
+    <p class="description">You <em>know</em> you want to.</p>
+
+    <form action="">
+        <div class="input-field">
+            <p class="legend">Let's do this!</p>
+                <label for="fn">First Name
+                 <input type="text" id="fn" required>
+                </label>
+                <label for="ln">Last Name
+                 <input type="text" id="ln">
+                </label>
+                <label for="em">E-mail Address
+                 <input type="email" id="em" required>
+                </label>
+                <label for="pn">Phone Number
+                 <input type="number" id="pn">
+                </label>
+                <label class="error pw1" for="pw">Password
+                 <input name="password" type="password" id="pw" required onchange="onChange();">
+                </label>
+                <label class="error pw2" for="cpw">Confirm Password
+                 <input name="confirm" type="password" id="cpw" required onchange="onChange();">
+                 <span id="message"></span>
+                </label>
+            </div>
+            <div class="submit-field">
+                  <button id="sumit-btn" type="submit">Create Account</button>
+                  <p>Already have an account? <a href="">Log in</p>
+            </div>
+    </form>
+</div>
+
+
+
 </body>
 </html>

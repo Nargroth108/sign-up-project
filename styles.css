@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+/* 
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;}
+  
+  input, textarea {
+    font: 1.4em/1.5em cursive, sans-serif;
+    border: none;
+    background: none;} */
+  
+
+.left-container {
+    background-image: url(https://images.unsplash.com/photo-1591043105600-1cf1c244a964?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    max-width: 60%;
+}
+
+.title-container {
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, .7);
+    color: white;
+    margin-top: 34%;
+    height: 120px;
+}
+
+.title {
+    font-size: 26px;
+    padding: 32px 0;
+    text-wrap: nowrap;
+}
+
+.credits {
+    margin-top: 30vh;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.description {
+    font-weight: bold;
+    font-size: large;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.right-container {
+    background-color: rgb(215, 215, 215);
+    padding-top: 30px;
+}
+
+form {
+    margin: 30px 0;
+}
+
+.legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+
+.input-field {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: rgb(179, 177, 175) ;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: #37c308 2px solid;
+    border-radius: 10px;
+}
+
+input:focus {
+    border: #0e3103 2.2px solid;
+    box-shadow: #092102 2px 3px;
+}
+
+.submit-field {
+    margin: 30px 30px;
+}
+
+button[type="submit"] {
+    background-color: #5ab40b;
+}
+
