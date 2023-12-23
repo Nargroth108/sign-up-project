@@ -36,22 +36,40 @@
                 <label for="pn">Phone Number
                  <input type="number" id="pn">
                 </label>
-                <label class="error pw1" for="pw">Password
-                 <input name="password" type="password" id="pw" required onchange="onChange();">
+                <label for="password">Password
+                 <input name="password" type="password" id="password" required>
+                 <div id="password-error" class="error"></div>
                 </label>
-                <label class="error pw2" for="cpw">Confirm Password
-                 <input name="confirm" type="password" id="cpw" required onchange="onChange();">
-                 <span id="message"></span>
+                <label for="passwordC">Confirm Password
+                 <input name="passwordC" type="password" id="passwordC" required>
+                <div id="passwordC-error" class="error"></div>
                 </label>
             </div>
             <div class="submit-field">
-                  <button id="sumit-btn" type="submit">Create Account</button>
+                  <button id="submit-btn" type="submit">Create Account</button>
                   <p>Already have an account? <a href="">Log in</p>
             </div>
     </form>
 </div>
 
+<script>
 
+const pw = document.querySelector('#password');
+const pwC = document.querySelector('#passwordC');
+const pwError = document.querySelector('#password-error');
+const pwCError = document.querySelector('#passwordC-error');
+const btnSubm = document.querySelector('#submit-btn')
+
+
+pwC.addEventListener("input", function (event) {
+    if (pwC.value !== pw.value) {
+      pwCError.textContent = 'Passwords do not match';
+      btnSubm.disabled = true;
+    } else {
+      pwCError.textContent = '';
+    }
+  });
+</script>
 
 </body>
 </html>

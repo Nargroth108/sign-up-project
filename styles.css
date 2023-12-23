@@ -104,3 +104,6 @@ button[type="submit"] {
     background-color: #5ab40b;
 }
 
+.error {
+    color: red;
+}
